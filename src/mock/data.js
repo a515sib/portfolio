@@ -16,42 +16,33 @@ export const heroData = {
 };
 
 // ABOUT DATA
-export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
+/* export const aboutData = {
+  img: '',
+  paragraphOne: "I work in the IT department at Ohel Children's ",
   paragraphTwo: '',
   paragraphThree: '',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
-};
+}; */
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
+    img: 'workbook.png',
+    title: 'Ohel Covid Workbook for Children',
     info: '',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://www.ohelfamily.org/workbook/',
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'ohel.png',
+    title: 'Payment page for Ohel',
+    info: 'I created a payment page for individuals that need to pay bills at Ohel',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://www.ohelfamily.org/themes/donate/tikvah.php',
+    repo: '', // if no repo, the button will not show up
   },
 ];
 
@@ -67,23 +58,13 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/chaya-silberman-bb18a2104/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/a515sib',
     },
   ],
 };

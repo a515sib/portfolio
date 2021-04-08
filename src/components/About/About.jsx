@@ -2,7 +2,6 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
 const About = () => {
@@ -29,24 +28,17 @@ const About = () => {
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
-              </div>
+              {/*<div className="about-wrapper__image">
+                <img src="../SVG/devfocus.svg" alt="developer" />
+              </div>*/}
             </Fade>
           </Col>
-          <Col md={6} sm={12}>
+          <Col md={12} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                    "I work as a web programmer at Ohel Children's Home for over three years. I enjoy learning new platforms such as Microsoft PowerApps and Salesforce. I am currently deploying a Salesforce Project using Apex Triggers and Lightning Web Components"}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
